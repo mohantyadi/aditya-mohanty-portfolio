@@ -378,7 +378,7 @@ const Portfolio = () => {
                 <div className="relative group">
                   <div className="absolute -inset-1 bg-gradient-to-r from-white to-gray-300 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
                   <img
-                    src="public/images/myphoto.jpeg"
+                    src="/images/myphoto.jpeg"
                     alt="Aditya Mohanty"
                     className="relative w-64 h-64 object-cover rounded-lg border-4 border-slate-800 group-hover:border-white/30 transition-all duration-300"
                   />
