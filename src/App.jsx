@@ -95,43 +95,57 @@ const Portfolio = () => {
         "AI-powered recommendations",
       ],
     },
+    {
+      title: "iZip Autos – Automotive Business Website",
+      description:
+        "Designed and developed a complete business website for iZip Autos from scratch, handling UI/UX design, frontend implementation, and deployment to deliver a responsive and production-ready web presence.",
+      tech: [
+        "PHP",
+        "CodeIgniter",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        ,
+      ],
+      year: "2025",
+      highlights: [
+        "End-to-end website development from design to deployment",
+        "Responsive UI optimized for mobile, tablet, and desktop devices",
+        "Improved brand visibility and online presence for the business",
+      ],
+      live: "https://izipautos.com",
+    },
 
     {
       title: "Personal Finance Manager",
       description:
-        "Built secure finance web application with JWT authentication, interactive dashboards for expense tracking, and SIP investment forecasting capabilities.",
-      tech: ["MEAN Stack", "AWS", "JWT", "CI/CD"],
+        "Built a secure personal finance web application with JWT-based authentication, interactive dashboards for expense tracking, and SIP investment forecasting logic.",
+      tech: ["MEAN Stack", "MongoDB", "JWT", "REST APIs"],
       year: "2024",
       highlights: [
-        "AWS deployment (EC2, S3, CloudFront)",
-        "Automated CI/CD pipeline",
-        "Investment forecasting",
+        "JWT-based authentication and secure user sessions",
+        "Interactive dashboards for income and expense tracking",
+        "REST APIs for managing financial data",
       ],
     },
-    {
-      title: "Univest – BFSI eKYC & Digital Onboarding Platform",
-      description:
-        "Enterprise-grade BFSI onboarding solution for Univest, enabling secure digital bank account opening through Aadhaar and PAN-based eKYC, document verification, and compliance-driven workflows.",
-      tech: [
-        "Angular",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "JWT",
-        "DigiLocker",
-        "eSign",
-        "REST APIs",
-      ],
-      year: "2024",
-      highlights: [
-        "End-to-end Aadhaar and PAN-based eKYC verification",
-        "DigiLocker integration for secure document retrieval",
-        "JWT-based authentication with role-based access control",
-      ],
-    },
+
   ];
 
   const experience = [
+    {
+      role: "Freelance Full Stack Developer",
+      company: "Independent",
+      period: "2023 – Present",
+      location: "Remote",
+      type: "Freelance",
+      highlights: [
+        "Designed and developed complete production-ready websites for clients, handling UI/UX design, frontend development, backend integration, and deployment",
+        "Built and delivered a full business website for iZip Autos, covering responsive design, performance optimization, and production deployment",
+        "Worked directly with clients to gather requirements, propose technical solutions, and deliver end-to-end implementations",
+        "Currently working on multiple freelance projects alongside full-time role, ensuring scalable and maintainable codebases",
+      ],
+    },
+
     {
       role: "Full Stack Developer",
       company: "Innodigital Solutions Pvt. Ltd.",
@@ -535,10 +549,26 @@ const Portfolio = () => {
                 className="group bg-slate-800/30 backdrop-blur-sm rounded-lg p-6 border border-slate-700 hover:border-white/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-400/10"
               >
                 <div className="flex justify-between items-start mb-4">
-                  <div className="p-3 bg-white/10 rounded-lg border border-white/30/30 group-hover:bg-white/20 transition-colors">
+                  <div className="p-3 bg-white/10 rounded-lg border border-white/30 group-hover:bg-white/20 transition-colors">
                     <Code size={24} className="text-white" />
                   </div>
-                  <span className="text-xs text-slate-500 font-mono">{project.year}</span>
+
+                  <div className="flex items-center gap-3">
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs px-3 py-1 border border-white/30 rounded-md text-white hover:bg-white/10 transition"
+                      >
+                        Live
+                      </a>
+                    )}
+
+                    <span className="text-xs text-slate-500 font-mono">
+                      {project.year}
+                    </span>
+                  </div>
                 </div>
 
                 <h3 className="text-xl md:text-2xl font-semibold text-white mb-3 group-hover:text-cyan-300 transition-colors">
