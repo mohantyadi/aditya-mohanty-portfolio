@@ -67,10 +67,15 @@ npm run build
 - Add/remove sections as needed
 - Update meta tags in `index.html`
 
-## 📄 License
+## 🔒 License & Usage
 
-MIT License - feel free to use this template for your own portfolio!
+© 2026 Aditya Mohanty. All rights reserved.
 
+This repository is intended for **portfolio and evaluation purposes only**.
+The source code may **not be copied, reused, modified, or distributed**
+without explicit written permission from the author.
+
+If you would like to use any part of this project, please contact me directly.
 ## 👤 Author
 
 **Aditya Mohanty**
