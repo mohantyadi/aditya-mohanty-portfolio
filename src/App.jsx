@@ -18,6 +18,7 @@ import {
   Award,
   Download,
 } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -75,7 +76,7 @@ const Portfolio = () => {
       title: "TrailSync",
       description:
         "Developed a workflow and activity tracking platform to monitor task progress, user actions, and operational trails with real-time visibility and audit readiness.",
-      tech: ["Angular", "Reacj", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+      tech: ["Angular", "React", "Node.js", "Express.js", "MongoDB", "REST APIs"],
       year: "2026",
       highlights: [
         "End-to-end task and activity tracking",
@@ -105,7 +106,6 @@ const Portfolio = () => {
         "JavaScript",
         "HTML5",
         "CSS3",
-        ,
       ],
       year: "2025",
       highlights: [
@@ -400,17 +400,17 @@ const Portfolio = () => {
               </div>
 
               <p className="text-slate-300 leading-relaxed text-lg">
-                I'm a passionate Full-Stack Developer with a strong focus on building{" "}
+                I'm a dedicated full-stack developer who loves building{" "}
                 <span className="text-white">scalable</span> and{" "}
-                <span className="text-white">user-friendly</span> web applications.
+                <span className="text-white">user-friendly</span> web apps that actually make a difference.
               </p>
 
               <p className="text-slate-300 leading-relaxed text-lg">
-                Currently working at{" "}
+                I worked at{" "}
                 <span className="text-white font-semibold">
                   Innodigital Solutions
                 </span>
-                , I've contributed to large-scale banking projects in the BFSI sector.
+                , contributing to major banking projects in the BFSI sector.
               </p>
 
               <p className="text-slate-300 leading-relaxed text-lg">
@@ -420,6 +420,7 @@ const Portfolio = () => {
                 </span>{" "}
                 from ITER, SOA University.
               </p>
+
 
               <div className="grid grid-cols-2 gap-4 pt-6">
                 <Fact icon={<MapPin size={20} />} label="Location" value="Hyderabad, India" />
